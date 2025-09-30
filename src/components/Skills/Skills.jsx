@@ -31,7 +31,6 @@ import windowsLogo from "../../assets/logo/windows.png";
 import macLogo from "../../assets/logo/mac.png";
 
 
-
 export default function Skills() {
   const LOGO = {
     "Frontend": [
