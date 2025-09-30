@@ -2,9 +2,7 @@ import React from 'react';
 import './Certificate.css';
 import b1 from '../../assets/images/dataanalysis.png';
 import b2 from '../../assets/images/oracle1.png';
-import b3 from '../../assets/images/dataanalysis.png';
-import b4 from '../../assets/images/dataanalysis.png';
-import b5 from '../../assets/images/dataanalysis.png';
+
 import b6 from '../../assets/images/b5.png';
 import b8 from '../../assets/images/michigan.png';
 
@@ -31,26 +29,26 @@ const Certificate = () => {
     {
       id: 3,
       name: "OCI Generative AI",
-      image: b3,
+      image: b2,
       score: "95%",
       description: "Data science by IBM",
-      link: "https://www.credly.com/badges/94b202b1-70bd-422b-bf70-686b845050e3/public_url"
+      link: "https://mylearn.oracle.com/ou/learning-path/become-an-oci-generative-ai-professional-2025/147863"
     },
     {
       id: 4,
       name: "Oracle AI Vector Search",
-      image: b4,
+      image: b2,
       score: "91%",
       description: "Machine Learning by IBM",
-      link: "https://www.credly.com/badges/22172d49-616c-4a81-b10a-6ae77bb9c2c2/public_url"
+      link: "https://mylearn.oracle.com/ou/learning-path/become-an-oracle-ai-vector-search-professional/144854"
     },
     {
       id: 5,
       name: "OCI Data Science",
-      image: b5,
+      image: b2,
       score: "95%",
       description: "Specialization by Coursera",
-      link: "https://coursera.org/share/2da5a65dfb1d33363d2f6f89c45ddf32"
+      link: "https://mylearn.oracle.com/ou/learning-path/become-an-oci-data-science-professional-2025/148474"
     },
     {
       id: 6,
