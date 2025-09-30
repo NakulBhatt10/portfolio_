@@ -30,7 +30,7 @@ const Education = () => {
       degree: "Higher Secondary Certificate (HSC)",
       course: "computer science (Information Technology)",
       duration: "August 2022 - August 2024",
-      score: "74.86% (First Class Honours)",
+      score: "First Class Honours",
       coreSubjects: [
         "Physics",
         "Chemistry",
