@@ -1,0 +1,70 @@
+/* CSS Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+body,
+.App {
+  background-color: #090a17;
+  overflow-x: hidden;
+}
+
+/* Make the <main> fill the viewport and scrollable */
+.main {
+  height: 100vh;
+  /* viewport height */
+  overflow-y: auto;
+  /* enable vertical scroll */
+  scroll-behavior: smooth;
+  /* smooth scroll when jumping to anchors */
+
+  /* OPTIONAL: enable scroll snapping */
+  scroll-snap-type: y mandatory;
+}
+
+/* Every section takes full viewport */
+.section {
+  height: 100vh;
+  /* exactly one screen tall */
+  width: 100%;
+  /* full width */
+  position: relative;
+
+  /* OPTIONAL: snap each section into view */
+  scroll-snap-align: start;
+
+  /* OPTIONAL: for centering contents */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Alternating section colors */
+.work-experience {
+  background-color: #000000;
+}
+
+.projects-container {
+  background-color: #12008a;
+}
+
+.skills-section {
+  background-color: #000000;
+}
+
+.certificate-section {
+  background-color: #12008a;
+}
+
+.about-container {
+  background-color: #000000;
+}
