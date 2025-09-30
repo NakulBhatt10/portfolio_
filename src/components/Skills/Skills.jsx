@@ -30,8 +30,7 @@ import linuxLogo from "../../assets/logo/linux.png";
 import windowsLogo from "../../assets/logo/windows.png";
 import macLogo from "../../assets/logo/mac.png";
 
-// Dummy icon for technologies without specific icons
-const dummyIcon = "https://via.placeholder.com/32x32/333333/ffffff?text=Tech";
+
 
 export default function Skills() {
   const LOGO = {

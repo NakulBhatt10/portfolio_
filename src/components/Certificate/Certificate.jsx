@@ -6,9 +6,7 @@ import b3 from '../../assets/images/dataanalysis.png';
 import b4 from '../../assets/images/dataanalysis.png';
 import b5 from '../../assets/images/dataanalysis.png';
 import b6 from '../../assets/images/b5.png';
-import b7 from '../../assets/images/dataanalysis.png';
 import b8 from '../../assets/images/michigan.png';
-import b9 from '../../assets/images/dataanalysis.png';
 
 
 
