@@ -1,16 +1,24 @@
-import React from 'react';
-import './Projects.css';
-import rapidBasketImage from '../../assets/images/parkl.png';
-import chatAppImage from '../../assets/images/rapid.png';
-import sionDrop from '../../assets/images/sion.png';
+import React from "react";
+import "./Projects.css";
 
+// ✅ Load all images from: src/assets/images
+const images = require.context("../../assets/images", false, /\.(png|jpe?g|svg)$/);
+
+const getImage = (fileName) => {
+  try {
+    return images(`./${fileName}`);
+  } catch (e) {
+    console.warn("Image not found:", fileName);
+    return "";
+  }
+};
 
 const Projects = () => {
   const projectsData = [
     {
-      id: 1,
-      title: "ParkLink ",
-      description: "ParkLink is a smart app that connects drivers with available rental parking spots, making parking simple, fast and hassle-free.",
+      title: "ParkLink",
+      description:
+        "ParkLink is a smart app that connects drivers with available rental parking spots, making parking simple, fast and hassle-free.",
       techStack: [
         "React, Redux, Redux Toolkit Thunk",
         "HTML, CSS, Javascript",
@@ -18,67 +26,101 @@ const Projects = () => {
         "ExpressJS and NodeJS REST API",
         "MongoDb Database",
         "Stripe Payment Integration",
-        "Amazon Web Service (AWS) Deployment"
+        "Amazon Web Service (AWS) Deployment",
       ],
-      image: rapidBasketImage,
+      // ✅ just write file name from src/assets/images
+      photo: "parkl.png",
       liveLink: "https://parklink1.netlify.app/",
-      githubLink: "https://github.com/NakulBhatt10/Parklink"
+      githubLink: "https://github.com/NakulBhatt10/Parklink",
     },
     {
-      id: 2,
       title: "RAPID",
-      description: "Response, Assistance, Protection, Information, Delivery — an app for quick help in natural or health calamities.",
+      description:
+        "Response, Assistance, Protection, Information, Delivery — an app for quick help in natural or health calamities.",
       techStack: [
         "React",
         "JavaScript",
         "HTML, CSS",
-
         "Firebase",
         "MongoDb Database",
         "React Native",
         "Google Maps API",
         "ai Chatbot",
-        "AI for weather forecasting"
+        "AI for weather forecasting",
       ],
-      image: chatAppImage,
+      photo: "rapid.png",
       liveLink: "https://rapid2.netlify.app/",
-      githubLink: "https://github.com/NakulBhatt10/ui-rapid"
+      githubLink: "https://github.com/NakulBhatt10/ui-rapid",
     },
     {
-      id: 3,
       title: "SionDrop",
-      description: "SionDrop is an app made for our university which basically helps the user to book and auto,taxi or just walking from our college to sion railway station.Helps user to connect with other users and share the ride fare or just make new friends.",
+      description:
+        "SionDrop helps users book auto/taxi/walk routes from college to Sion station, connect with others and share ride fare.",
       techStack: [
         "React",
         "JavaScript",
         "HTML, CSS",
-        
         "MongoDb",
         "Google Maps API",
-        "AI Chatbot"
+        "AI Chatbot",
       ],
-      image: sionDrop,
+      photo: "sion.png",
       liveLink: "https://siondrop.netlify.app",
-      githubLink: "https://github.com/NakulBhatt10/ui-sionDrop "
-    }    
+      githubLink: "https://github.com/NakulBhatt10/ui-sionDrop",
+    },
+
+        {
+      title: "Puzzle Wood",
+      description:
+        "PuzzleWood is a wooden puzzle and educational toy store website designed to make finding, adding, and purchasing learning toys quick and easy.",
+      techStack: [
+        "React",
+        "JavaScript",
+        "HTML, CSS",
+        "MongoDb",
+        "Resend API",
+        "Render",
+
+      ],
+      photo: "newup1.png",
+      liveLink: "https://puzzlewood.netlify.app/",
+      githubLink: "https://github.com/NakulBhatt10/baldaniya",
+    },
+
+            {
+      title: "Mudra Loan",
+      description:
+        "Mudra Loan is a web app that helps users explore PMMY (MUDRA) loan options, check eligibility, and submit a loan application with document upload and application tracking.",
+      techStack: [
+        "React",
+        "JavaScript",
+        "HTML, CSS",
+        "MongoDb",
+        "EmailJS",
+        "Resend API",
+        "Render",,
+      ],
+      photo: "mudra.png",
+      liveLink: "https://mudraloan1.netlify.app/",
+      githubLink: "https://github.com/NakulBhatt10/mudra-loans",
+    },
+
+
+
   ];
 
   return (
     <section className="projects-section" id="projects">
       <div className="projects-container">
         <h2 className="projects-title">Projects</h2>
-        
+
         <div className="projects-content">
-          {projectsData.map((project) => (
-            <div key={project.id} className="project-item">
+          {projectsData.map((project, index) => (
+            <div key={index} className="project-item">
               <div className="project-text">
-                <h3 className="project-title">
-                  {project.title}
-                </h3>
-                <p className="project-description">
-                  {project.description}
-                </p>
-                
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-description">{project.description}</p>
+
                 <div className="project-details">
                   <div className="project-detail">
                     <span className="detail-label">Tech Stack</span>
@@ -87,35 +129,35 @@ const Projects = () => {
                 </div>
 
                 <ol className="tech-stack-list">
-                  {project.techStack.map((tech, index) => (
-                    <li key={index} className="tech-stack-item">
+                  {project.techStack.map((tech, i) => (
+                    <li key={i} className="tech-stack-item">
                       {tech}
                     </li>
                   ))}
                 </ol>
 
                 <div className="project-buttons">
-                  <a 
-                    href={project.liveLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="project-btn live-btn"
                   >
                     Live Website →
                   </a>
-                  <a 
-                    href={project.githubLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="project-btn github-btn"
                   >
                     GitHub Repo →
                   </a>
                 </div>
               </div>
-              
+
               <div className="project-image">
-                <img src={project.image} alt={project.title} />
+                <img src={getImage(project.photo)} alt={project.title} />
               </div>
             </div>
           ))}

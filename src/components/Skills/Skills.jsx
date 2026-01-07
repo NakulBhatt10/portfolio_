@@ -45,11 +45,11 @@ export default function Skills() {
       { name: "Node.js", icon: nodeLogo, link: "https://nodejs.org/" },
       { name: "Express.js", icon: expressLogo, link: "https://expressjs.com/" },
       { name: "REST API", icon: restLogo, link: "https://restfulapi.net/" },
-      { name: "GraphQL", icon: graphqlLogo, link: "https://graphql.org/" },
-      { name: "JWT", icon: jwtLogo, link: "https://jwt.io/" },
+
+
       { name: "Firebase", icon: firebaseLogo, link: "https://firebase.google.com/" },
-      { name: "Stripe Payments", icon: stripeLogo, link: "https://stripe.com/" },
-      { name: "OpenAI LLM (API)", icon: openaiLogo, link: "https://openai.com/api/" },
+
+
     ],
     "Databases & Test": [
       { name: "MongoDB", icon: mongodbLogo, link: "https://www.mongodb.com/" },
