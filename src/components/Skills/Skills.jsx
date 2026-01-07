@@ -10,11 +10,11 @@ import nextLogo from "../../assets/logo/next.jpg";
 import nodeLogo from "../../assets/logo/nodeJS.png";
 import expressLogo from "../../assets/logo/express.png";
 import restLogo from "../../assets/logo/rest.png";
-import graphqlLogo from "../../assets/logo/graphql.png";
-import jwtLogo from "../../assets/logo/jwt.png";
+
+
 import firebaseLogo from "../../assets/logo/firebase.png";
-import stripeLogo from "../../assets/logo/stripe.png";
-import openaiLogo from "../../assets/logo/openai.png";
+
+
 
 // Databases & Test
 import mongodbLogo from "../../assets/logo/mongo.png"; // Using PostgreSQL icon as placeholder
