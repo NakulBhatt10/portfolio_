@@ -98,7 +98,7 @@ const Projects = () => {
         "MongoDb",
         "EmailJS",
         "Resend API",
-        "Render",,
+        "Render",
       ],
       photo: "mudra.png",
       liveLink: "https://mudraloan1.netlify.app/",
